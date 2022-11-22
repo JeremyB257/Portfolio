@@ -1,0 +1,109 @@
+header {
+  height: 100vh;
+}
+.header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fefeff;
+  padding: 15px 25px;
+  height: 25px;
+  -webkit-box-shadow: 0px 2px 10px -4px #000000;
+  box-shadow: 0px 2px 10px -4px #000000;
+}
+.logo img {
+  width: 60px;
+  position: fixed;
+  top: 5px;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav li {
+  list-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-size: calc(12px + 0.5vw);
+}
+.nav li:hover {
+  color: #6887cf;
+}
+
+.nav-btn {
+  display: none;
+}
+
+.nav-links {
+  display: inline;
+  float: right;
+}
+
+#nav-check {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav-btn > label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 13px;
+    margin: 2px;
+  }
+  .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #6887cf;
+  }
+  .nav ul {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+  .nav li {
+    padding: 5px 10px;
+    color: #fefeff;
+  }
+  .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  #nav-check:checked ~ .nav-links {
+    height: 26vh;
+    overflow-y: auto;
+  }
+}

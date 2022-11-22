@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'yellowtail';
+  src: url(./fonts/Yellowtail-Regular.ttf);
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+a,
+a:visited {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fefeff;
+  color: #010101;
+  line-height: 1.5;
+}

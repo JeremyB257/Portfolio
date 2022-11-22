@@ -1,0 +1,260 @@
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#experience .title {
+  color: #333;
+}
+
+.exp-container {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  height: 250px;
+}
+
+.timeline {
+  position: absolute;
+  height: 6px;
+  background-color: #6887cf;
+  left: 0;
+  right: 0;
+  top: 10%;
+  margin-bottom: -3px;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
+    z-index: 2;
+    top: 0;
+    height: 100%;
+    width: 25px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
+    z-index: 2;
+    top: 0px;
+    right: 0;
+    height: 100%;
+    width: 25px;
+  }
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: absolute;
+  width: 40%;
+  transition: all 300ms;
+}
+.ball1,
+.ball2,
+.ball3,
+.ball4 {
+  position: absolute;
+  top: -20px;
+  z-index: 1;
+  border-radius: 50px;
+  background: #6887cf;
+  border: solid 4px white;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  animation: bounce infinite 1000ms;
+}
+.ball1 {
+  left: 18%;
+}
+.ball2 {
+  left: 35%;
+}
+.ball3 {
+  left: 57%;
+}
+.ball4 {
+  left: 78%;
+}
+.lang1,
+.lang1-1,
+.lang2,
+.lang3,
+.lang4,
+.lang5 {
+  position: absolute;
+  top: -12px;
+  img {
+    transition: all 300ms;
+    width: 30px;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+.lang1 {
+  left: 8%;
+}
+.lang1-1 {
+  left: 10%;
+}
+.lang2 {
+  left: 24%;
+}
+.lang3 {
+  left: 62%;
+}
+.lang4 {
+  left: 64.5%;
+}
+.lang5 {
+  left: 70%;
+}
+.down1 {
+  top: 25px;
+  left: 8%;
+}
+.down2 {
+  top: 25px;
+  left: 25%;
+}
+
+.down3 {
+  top: -245px;
+  left: 600px;
+}
+.hidden {
+  opacity: 0;
+  transform: translateX(-150px);
+}
+
+.content {
+  padding: 10px 10px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Media queries - Responsive timeline on screens less than 800px wide */
+@media screen and (max-width: 800px) {
+  .exp-container {
+    height: 500px;
+  }
+  .timeline {
+    width: 6px;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: auto;
+    margin-left: -3px;
+    margin-bottom: 0;
+    &::before {
+      content: '';
+      left: 0;
+      width: 100%;
+      height: 25px;
+      background-image: linear-gradient(to bottom, #f8f8f8, rgba(248, 248, 248, 0));
+    }
+    &::after {
+      content: '';
+      left: 0px;
+      bottom: 0;
+      width: 100%;
+      height: 25px;
+      top: auto;
+      background-image: linear-gradient(to top, #f8f8f8, rgba(248, 248, 248, 0));
+    }
+  }
+  .ball1 {
+    left: -20px;
+    top: 18%;
+  }
+  .ball2 {
+    left: -20px;
+    top: 35%;
+  }
+  .ball3 {
+    left: -20px;
+    top: 57%;
+  }
+  .ball4 {
+    left: -20px;
+    top: 78%;
+  }
+  .lang1 {
+    left: -30px;
+    top: 8%;
+  }
+  .lang1-1 {
+    left: 5px;
+    top: 8%;
+  }
+  .lang2 {
+    left: 5px;
+    top: 27%;
+  }
+  .lang3 {
+    left: -30px;
+    top: 66%;
+  }
+  .lang4 {
+    left: 5px;
+    top: 66%;
+  }
+  .lang5 {
+    left: 5px;
+    top: 72%;
+  }
+  .down1 {
+    top: 25px;
+    left: 0;
+  }
+  .down2 {
+    top: 110px;
+    left: 0;
+  }
+
+  .down3 {
+    top: 245px;
+    left: 0;
+  }
+  /* Full-width containers */
+  .container {
+    width: 250px;
+    padding-left: 70px;
+    padding-right: 25px;
+    transition: all 300ms;
+  }
+  .hidden {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .container {
+    width: 180px;
+  }
+}

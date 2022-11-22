@@ -1,0 +1,42 @@
+/* A Propos */
+#about {
+  background-color: #6887cf;
+  color: #fefeff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+#about img {
+  object-fit: cover;
+  width: 160px;
+  border: white 10px solid;
+  margin: 0 auto;
+}
+.title {
+  font-family: 'yellowtail', cursive;
+  font-size: 50px;
+  color: #fefeff;
+}
+.about-info {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .about-info {
+    flex-direction: column;
+  }
+}
+.about-info p {
+  text-align: center;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+.about-info p a {
+  color: #333;
+  font-weight: bold;
+}
+.about-info p a:hover {
+  color: #fefeff;
+}
