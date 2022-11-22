@@ -4,7 +4,7 @@ import { Slide } from 'react-awesome-reveal';
 const Skills = () => {
   return (
     <section id="skills">
-      <h2 className="title">Mes Compétence</h2>
+      <h2 className="title">Mes Compétences</h2>
       <div className="skills-blocs">
         <div className="skills-chart">
           <div className="skills-bloc">

@@ -27,34 +27,38 @@ const Experience = () => {
       <h2 className="title">Mes Experiences</h2>
       <div className="exp-container">
         <div className="timeline">
-          <div className="lang1">
+          <div className="lang lang1" title="Html">
             <img src="./img/html.png" alt="logo html" />
           </div>
-          <div className="lang1-1">
+          <div className="lang lang1-1" title="Css">
             <img src="./img/css.png" alt="logo css" />
           </div>
-          <div className="lang2">
+          <div className="lang lang2" title="Javascript">
             <img src="./img/js1.png" alt="logo js" />
           </div>
-          <div className="lang3">
+          <div className="lang lang3" title="NodeJs">
             <img src="./img/nodejs1.png" alt="logo nodejs" />
           </div>
-          <div className="lang4">
+          <div className="lang lang4" title="MongoDb">
             <img src="./img/mongodb1.png" alt="logo mongodb" />
           </div>
-          <div className="lang5">
+          <div className="lang lang5" title="React">
             <img src="./img/react1.png" alt="logo react" />
           </div>
-          <div className="ball1" onClick={openBall1}>
+          <div className="lang lang6" title="Symnfony">
+            <img src="./img/symfony.png" alt="logo symfony" />
+          </div>
+          <div className="ball ball2018" onClick={openBall1}>
             2018
           </div>
-          <div className="ball2" onClick={openBall2}>
+          <div className="ball ball2019" onClick={openBall2}>
             2019
           </div>
-          <div className="ball3" onClick={openBall3}>
+          <div className="ball ball2021" onClick={openBall3}>
             2021
           </div>
-          <div className="ball4">2022</div>
+          <div className="ball ball2022">2022</div>
+          <div className="ball ball2023">2023</div>
           <div className={isActive1 ? 'container down1' : 'container down1 hidden'}>
             <div className="content">
               <h4>2018 - Freelance</h4>
