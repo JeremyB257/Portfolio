@@ -142,9 +142,9 @@
 
 @keyframes learn-stripes {
   0% {
-    background-position: 0 0;
+    background-position-x: 0;
   }
   100% {
-    background-position: 40px 0;
+    background-position-x: 40px;
   }
 }
