@@ -8,6 +8,25 @@ const Portfolio = () => {
       <div className="projects">
         <Zoom triggerOnce>
           <div className="project">
+            <img src="./img/stat-card.png" alt="stat card" />
+            <div className="project-desc">
+              <p className="project-desc-title">Stats Card</p>
+              <p className="project-desc-text">Stats Card</p>
+              <p className="tags">
+                <span className="tag">Html</span>
+                <span className="tag">Css/Sass</span>
+              </p>
+              <p className="project-desc-separator">Lien</p>
+              <p>
+                <a className="visit-button" href="https://jeremyb257.github.io/Js-project/stats-card/" target="_blank">
+                  Acceder au site
+                </a>
+              </p>
+            </div>
+          </div>
+        </Zoom>
+        <Zoom triggerOnce>
+          <div className="project">
             <img src="./img/projet-css-anim.png" alt="Oh My Food" />
             <div className="project-desc">
               <p className="project-desc-title">Oh My Food</p>
@@ -21,6 +40,26 @@ const Portfolio = () => {
               <p className="project-desc-separator">Lien</p>
               <p>
                 <a className="visit-button" href="https://jeremyb257.github.io/ohmyfood" target="_blank">
+                  Acceder au site
+                </a>
+              </p>
+            </div>
+          </div>
+        </Zoom>
+        <Zoom triggerOnce>
+          <div className="project">
+            <img src="./img/ticTacToe.png" alt="Tic Tac Toe" />
+            <div className="project-desc">
+              <p className="project-desc-title">Tic Tac Toe</p>
+              <p className="project-desc-text">Projet Html/Css/JS, Réalisation du célèbre jeu Tic Tac Toe.</p>
+              <p className="tags">
+                <span className="tag">Html</span>
+                <span className="tag">Css/Sass</span>
+                <span className="tag">JavaScript</span>
+              </p>
+              <p className="project-desc-separator">Lien</p>
+              <p>
+                <a className="visit-button" href="https://jeremyb257.github.io/Js-project/06-morpion/" target="_blank">
                   Acceder au site
                 </a>
               </p>
@@ -140,25 +179,7 @@ const Portfolio = () => {
             </div>
           </div>
         </Zoom>
-        <Zoom triggerOnce>
-          <div className="project">
-            <img src="./img/stat-card.png" alt="stat card" />
-            <div className="project-desc">
-              <p className="project-desc-title">Stats Card</p>
-              <p className="project-desc-text">Stats Card</p>
-              <p className="tags">
-                <span className="tag">Html</span>
-                <span className="tag">Css/Sass</span>
-              </p>
-              <p className="project-desc-separator">Lien</p>
-              <p>
-                <a className="visit-button" href="https://jeremyb257.github.io/Js-project/stats-card/" target="_blank">
-                  Acceder au site
-                </a>
-              </p>
-            </div>
-          </div>
-        </Zoom>
+
         <Zoom triggerOnce>
           <div className="project">
             <img src="./img/recipe-app.png" alt="recipe app" />
@@ -199,7 +220,32 @@ const Portfolio = () => {
               </p>
               <p className="project-desc-separator">Lien</p>
               <p>
-                <a className="visit-button" href="https://socialmedia257.netlify.app/" target="_blank">
+                <a className="visit-button disabled" href="https://socialmedia257.netlify.app/" target="_blank">
+                  Acceder au site
+                </a>
+              </p>
+            </div>
+          </div>
+        </Zoom>
+        <Zoom triggerOnce>
+          <div className="project">
+            <img src="./img/projet-media-social.png" alt="Booking" />
+            <div className="project-desc">
+              <p className="project-desc-title">Booking</p>
+              <p className="project-desc-text">
+                Projet MERN, Site de réservation de logement, Création de l'API avec NodeJs / ExpressJs / MongoDb en
+                back-End et React / Redux en Front-End.
+              </p>
+              <p className="tags">
+                <span className="tag">Html</span>
+                <span className="tag">Css/Sass</span>
+                <span className="tag">React/Redux</span>
+                <span className="tag">NodeJs</span>
+                <span className="tag">MongoDb</span>
+              </p>
+              <p className="project-desc-separator">Lien</p>
+              <p>
+                <a className="visit-button disabled" href="" target="_blank">
                   Acceder au site
                 </a>
               </p>
