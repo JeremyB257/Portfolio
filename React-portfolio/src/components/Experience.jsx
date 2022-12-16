@@ -54,10 +54,10 @@ const Experience = () => {
           <div className="ball ball2019" onClick={openBall2}>
             2019
           </div>
-          <div className="ball ball2021" onClick={openBall3}>
-            2021
+          <div className="ball ball2021">2021</div>
+          <div className="ball ball2022" onClick={openBall3}>
+            2022
           </div>
-          <div className="ball ball2022">2022</div>
           <div className="ball ball2023">2023</div>
           <div className={isActive1 ? 'container down1' : 'container down1 hidden'}>
             <div className="content">
@@ -72,6 +72,13 @@ const Experience = () => {
               <h4>2019 - Freelance</h4>
               <p>Création de sites e-commerce Shopify/Wordpress</p>
               <p>Creation d'un theme Shopify</p>
+            </div>
+          </div>
+          <div className={isActive3 ? 'container down3' : 'container down3 hidden'}>
+            <div className="content">
+              <h4>2022 - Formation</h4>
+              <p>M2i Formation</p>
+              <p>TP Developpeur web et web mobile</p>
             </div>
           </div>
         </div>
