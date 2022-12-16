@@ -7,6 +7,9 @@
   align-items: center;
   padding: 30px;
 }
+#about > div {
+  max-width: 1300px;
+}
 #about img {
   object-fit: cover;
   width: 160px;

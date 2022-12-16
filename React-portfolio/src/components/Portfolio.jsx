@@ -233,8 +233,8 @@ const Portfolio = () => {
             <div className="project-desc">
               <p className="project-desc-title">Booking</p>
               <p className="project-desc-text">
-                Projet MERN, Site de réservation de logement, Création de l'API avec NodeJs / ExpressJs / MongoDb en
-                back-End et React / Redux en Front-End.
+                Site de réservation de logement, Création de l'API avec NodeJs / ExpressJs / MongoDb en back-End et
+                React / Redux en Front-End.
               </p>
               <p className="tags">
                 <span className="tag">Html</span>
