@@ -229,7 +229,7 @@ const Portfolio = () => {
         </Zoom>
         <Zoom triggerOnce>
           <div className="project">
-            <img src="./img/projet-media-social.png" alt="Booking" />
+            <img src="./img/booking.png" alt="Booking" />
             <div className="project-desc">
               <p className="project-desc-title">Booking</p>
               <p className="project-desc-text">
