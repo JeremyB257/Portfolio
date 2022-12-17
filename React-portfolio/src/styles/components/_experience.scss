@@ -259,7 +259,7 @@
   }
   /* Full-width containers */
   .container {
-    width: 250px;
+    width: 275px;
     padding-left: 70px;
     padding-right: 25px;
     transition: all 300ms;
@@ -267,11 +267,5 @@
   .hidden {
     opacity: 0;
     transform: translateY(-150px);
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .container {
-    width: 180px;
   }
 }
